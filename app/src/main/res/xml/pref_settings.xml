@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="In-Flip Settings" >
+        <ListPreference
+            android:key="fliptimes"
+            android:title="Flip Times"
+            android:summary="Set the times of flip"
+            android:entries="@array/times"
+            android:entryValues="@array/times"
+            />
+        <CheckBoxPreference
+            android:key="inf"
+            android:title="Infinite Times"
+            android:summary="Keep flipping"
+            />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="About" >
+        <Preference
+            android:title="Version"
+            android:summary="v0.0.1\nBuild 0001"
+            />
+
+    </PreferenceCategory>
+</PreferenceScreen>
